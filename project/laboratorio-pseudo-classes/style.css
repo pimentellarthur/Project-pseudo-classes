@@ -1,0 +1,38 @@
+*{ 
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+section{
+    display: grid;
+    
+}
+article {
+    background-color: blue;
+    margin: 30px;
+    border: 0px;
+    padding: 25px;
+    border-radius: 10px;
+   
+}
+button{
+    transition: background-color 3s, transform 0.8s ;
+}
+
+.hover button:hover{
+    cursor: pointer;
+    background-color: coral;
+    transform: scale(2.5);
+ 
+}
+
+.active button:active{
+    cursor: grabbing;
+    transform: scale(0.95);
+    background-color: chocolate;
+}
+
+.focus button:focus{
+    cursor: pointer;
+    border: 2px solid red;
+}
